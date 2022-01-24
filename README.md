@@ -6,5 +6,5 @@ Contract written in Solidity
 
 Contract tested with brownie
 
-'mainnet-fork'
+'mainnet-fork' - via alchemy
 'development' with mocks

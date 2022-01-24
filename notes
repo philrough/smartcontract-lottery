@@ -1,7 +1,17 @@
 // brownie changes
 brownie networks delete mainnet-fork
 brownie networks add development mainnet-fork cmd=ganache-cli host=http://127.0.0.1 fork=https://eth-mainnet.alchemyapi.io/v2/J8ynaFrmUlPcJ-BBywf2QryFofJScBmk accounts=10 mnemonic=brownie port=8545
+- brownie compile
+- brownie run script\deploy.py
+- brownie test --network mainnet-fork
+
 
 Alchemy - Live Eth node for development
 Log on - create project - link to chain (Eth - mainnet) grab url
 Check resource usage against capacity
+
+Git - repository
+git remote add origin https://github.com/philrough/smartcontract-lottery.git
+git add .
+git commit -m ""
+git push -u origin main
