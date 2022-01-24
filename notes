@@ -15,3 +15,8 @@ git remote add origin https://github.com/philrough/smartcontract-lottery.git
 git add .
 git commit -m ""
 git push -u origin main
+
+vrfCoordinator
+rinkeby - 0xb3dCcb4Cf7a26f6cf6B120Cf5A73875B7BBc655B
+mainnet - 0xf0d54349aDdcf704F77AE15b96510dEA15cb7952
+
