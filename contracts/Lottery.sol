@@ -60,15 +60,11 @@ contract Lottery is VRFConsumerBase, Ownable {
             lottery_state == LOTTERY_STATE.CLOSED,
             "Lottery is not ready to be Opened"
         );
-        lottery_state == LOTTERY_STATE.OPEN;
+        lottery_state = LOTTERY_STATE.OPEN;
     }
 
     function endLottery() public onlyOwner {
-        require(
-            lottery_state == LOTTERY_STATE.OPEN,
-            "Lottery is already closed"
-        );
-        lottery_state == LOTTERY_STATE.CALCULATING_WINNER;
+        lottery_state = LOTTERY_STATE.CALCULATING_WINNER;
         bytes32 _requestId = requestRandomness(keyhash, fee);
     }
 

@@ -4,6 +4,7 @@ brownie networks add development mainnet-fork cmd=ganache-cli host=http://127.0.
 - brownie compile
 - brownie run script\deploy.py
 - brownie test --network mainnet-fork
+- brownie test -k test_get_entrance_fee2  
 
 
 Alchemy - Live Eth node for development
