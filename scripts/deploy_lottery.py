@@ -10,8 +10,9 @@ def deploy_lottery():
         get_contract("link_token").address,
         config["networks"][network.show_active()]["fee"],
         config["networks"][network.show_active()]["keyhash"],
-        {"from": account}
-        )
+        {"from": account},
+        publish_source=config["networks"][network.show_active()].get("verify", False),
+    )
     print("Deployed Lottery Contract")
     return lottery
 

@@ -11,6 +11,9 @@ Alchemy - Live Eth node for development
 Log on - create project - link to chain (Eth - mainnet) grab url
 Check resource usage against capacity
 
+Etherscan
+Create api key for all ether networks to publish contract
+
 Git - repository
 git remote add origin https://github.com/philrough/smartcontract-lottery.git
 git add .
@@ -20,4 +23,7 @@ git push -u origin main
 vrfCoordinator
 rinkeby - 0xb3dCcb4Cf7a26f6cf6B120Cf5A73875B7BBc655B
 mainnet - 0xf0d54349aDdcf704F77AE15b96510dEA15cb7952
+
+Accounts
+MetaMask - Dev
 
